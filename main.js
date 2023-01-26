@@ -7,6 +7,7 @@ searchBtn.addEventListener('click', function() {
     let userSearch = document.getElementById('searchbar').value;
     document.getElementById('cityname').innerText = capitalise(userSearch);
     city = userSearch.replace(/ /g, ",");
+    document.getElementById("form").reset();
     weather(city);
 })
 
